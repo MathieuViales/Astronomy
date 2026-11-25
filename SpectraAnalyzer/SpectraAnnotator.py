@@ -135,11 +135,6 @@ STAR_INFO = {
     }
 }
 
-REPORT_INTRO = (
-    "I've built a python script to download the spectra and add an "
-    "overlay for some of common elements to make it easier to see :-)"
-)
-
 
 # ==========================================
 # DOWNLOAD CATALOGUE
@@ -601,7 +596,6 @@ def write_report(results):
         "<title>MaStar stellar spectra</title></head>\n"
         '<body style="font-family: Arial, sans-serif; '
         'font-size: 14px; margin: 24px; color: #222222;">\n'
-        f"<p>{esc(REPORT_INTRO)}</p>\n"
         f"{build_index_table()}"
         "<p>&nbsp;</p>\n"
         f"{build_spectra_table(successes)}"
